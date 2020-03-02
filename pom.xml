@@ -8,6 +8,13 @@
     <artifactId>untitled</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.11</java.version>
+        <maven.compiler.source>1.11</maven.compiler.source>
+        <maven.compiler.target>1.11</maven.compiler.target>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -18,18 +25,5 @@
     </dependencies>
 
 
-
-    <properties>
-        <plugin>
-            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.0</version>
-            <configuration>
-                <source>13</source> <!-- 1.8,1.9,1.10,11,12,13 -->
-                <target>13</target>
-            </configuration>
-        </plugin>
-    </properties>
     
 </project>
