@@ -10,4 +10,11 @@ public class HelloWorldTest {
         Assert.assertEquals(have.getString(), want);
     }
 
+    @Test
+    public void secondTest(){
+        HelloWorld have = new HelloWorld("HelloWorld");
+        String want = HelloWorld.returnString("HelloWorld");
+        Assert.assertEquals(have.getString(), want);
+    }
+
 }
