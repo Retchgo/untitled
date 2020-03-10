@@ -5,7 +5,7 @@ public class HelloWorldAddTest {
 
     @Test
     public void firstTest(){
-        HelloWorld have = new HelloWorld("Hello");
+        HelloWorld have = new HelloWorld("HelloWorld");
         String want = HelloWorld.returnString("HelloWorld");
         Assert.assertEquals(have.getString(), want);
     }

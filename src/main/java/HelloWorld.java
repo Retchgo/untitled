@@ -1,7 +1,7 @@
-
 public class HelloWorld {
 
-    private String string;
+    private final String string;
+    private static final int TEN = 10;
 
     public HelloWorld(String string) {
         this.string = string;
@@ -11,15 +11,14 @@ public class HelloWorld {
         return string;
     }
 
-    public static String returnString (String string) {
+    public static String returnString(String string) {
         return string;
     }
 
     public static void main(String[] args) {
         HelloWorld hw = new HelloWorld("Hello");
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < TEN; i++) {
             System.out.println(hw.getString());
         }
     }
-
 }
